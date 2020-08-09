@@ -33,7 +33,7 @@ public class String_Multiplication{
       {
           for(int x=len_string1-1; x >= 0; x--)
           {
-              //we iterated over the characters in an array, lets multiply weith every character of b to a
+              //we iterated over the characters in an array, lets multiply with every character of b to a
               //in java the int data type is restruced to 32 bit, we dont have to specify or put any constraint to it.
                
                 
@@ -46,7 +46,7 @@ public class String_Multiplication{
                 
                 prod_result = ((string_1[x] -'0') * (string_2[y] -'0'));
                 // we got the result as 20,15,10,5,16,12,8,4,12,9,6,3,8,6,4,2
-                // now we are doing sum of multiplication result of i for each number in j 
+                // now we are doing sum of multiplication result of x for each number in y
                 int storage_add = (final_res[x+y+1]-'0') + prod_result;
                 // System.out.println(storage_add);
                 final_res[x+y+1] = (char)(storage_add%10 +'0');
@@ -58,7 +58,7 @@ public class String_Multiplication{
       
     // Now we got the product of two strings in an array, lets convert that to string, since our requirement is to return the result as string .
       String string_output = new String(final_res);
-      String Pattern = "^0+(?!$)";//removing the leading zeros
+      String Pattern = "^0+(?!$)";//removing the leading zeros using regural expressions
       String str_return = string_output.replaceAll(Pattern, "");
       return str_return;
      
@@ -75,9 +75,9 @@ public class String_Multiplication{
         String num2 = sc.nextLine();
         sc.close(); 
     
-        if(num1.length() == 0 && num2.length() == 0){
+        if(num1.length() == 0  && num2.length() == 0){
         
-            System.out.printf("Please enter correct numbers");
+            System.out.printf("Sorry! Input is null, please specify the numbers");
         
         }else{
           
