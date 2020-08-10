@@ -141,10 +141,7 @@ public class String_Multiplication{
         
             System.out.println("Output in Decimal: "+multiplication_output);
             
-            BigInteger dec_string =new BigInteger(multiplication_output);
-            // BigInteger to_hex = new BigInteger(dec_string,16);
-
-            System.out.println("The output value in hexa deciaml: "+ dec_string.toString(16));
+            System.out.println("The output in hexdecimal: "+new BigInteger(multiplication_output).toString(16));
             
             
             
