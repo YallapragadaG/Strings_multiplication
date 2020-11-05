@@ -1,4 +1,4 @@
-# MultiplyStrings
+# MultiplyStrings in JAVA
 
 Best online compiler - Incase Java IDE is not available
 
