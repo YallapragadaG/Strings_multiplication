@@ -1,4 +1,4 @@
-# MultiplyStrings in JAVA
+# Multiplication Hexa decimal Strings in JAVA
 
 Best online compiler - Incase Java IDE is not available
 
